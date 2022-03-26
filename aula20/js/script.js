@@ -1,33 +1,27 @@
-function meuEscopo() {
-    const form = document.querySelector('.form');
-    const resultado = document.querySelector('.resultado');
+const nome = document.querySelector('.nome');
+const sobrenome = document.querySelector('.sobrenome');
+const form = document.querySelector('form');
+const resultado = document.querySelector('#resultado');
+const url = document.querySelector('.url');
 
-    const pessoas = [];
+let dados = [];
 
-    function recebeEventoForm (evento) {
+dados.push({
+  nome: nome.value,
+  sobrenome: sobrenome.value,
+  url: url.value
+});
 
-        evento.preventDefault();
+form.addEventListener('submit', (evento) => {
+  evento.preventDefault();
 
-      const nome = form.querySelector('.nome');
-      const sobrenome= form.querySelector('.sobrenome');
-      const peso = form.querySelector('.peso');
-      const altura = form.querySelector('.altura');
+  resultado.innerHTML += `
+  <h2>Dados Digitados:</h2><br>
+  <p>Nome: ${nome.value}</p><br>
+  <p>Sobrenome: ${sobrenome.value}</p><br>
+  <img src="${url.value}">`
 
+  resultado.classList.add('resultado');
 
-
-      pessoas.push({
-        nome: nome.value,
-        sobrenome: sobrenome.value,
-        peso: peso.value,
-        altura: altura.value
-      });
-
-      console.log(pessoas)
-    
-      resultado.innerHTML += `<p>Dados digitados: <br> Nome: ${nome.value} ${sobrenome.value} <br> Peso: ${peso.value} <br> Altura: ${altura.value} </p>`;
-    
-    }
-    form.addEventListener('submit', recebeEventoForm);
-}
-
-meuEscopo();
+  evento.preventDefault();
+});

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,32 @@
     <title>Exercícios</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
 
-    <form autocomplete="off" class="form">
-        <fieldset>
-            <legend>Formulário</legend>
-            <p>
-                <input type="text" class="nome"  placeholder="Nome" required>
-            </p>
-            <p>
-                <input type="text" class="sobrenome" placeholder="Sobrenome" required>
-            </p>
-            <p>
-                <input type="text" class="peso" placeholder="Peso" required>
-            </p>
-            <p>
-                <input type="text" class="altura" placeholder="Altura" required>
-            </p>
-            <button type="submit">Enviar</button>
-        </fieldset>
-    </form>
-    <div class="resultado"></div>
-    
-
+    <div class="container">
+        <div class="form-container">
+            <form autocomplete="off" id="form">
+                <fieldset>
+                    <span>Formulário</span>
+                    <p>
+                        <input type="text" class="nome" placeholder="Nome" required>
+                    </p>
+                    <p>
+                        <input type="text" class="sobrenome" placeholder="Sobrenome" required>
+                    </p>
+                    <p>
+                        <input type="url" class="url" placeholder="url" required>
+                    </p>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+            <div id="resultado">
+                
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>
