@@ -19,6 +19,9 @@ const nomes = ['Eduardo', 'Maria', 'Joana'];
 // Adiciona elemento no incio do array
 // nomes.unshift('João')
 // nomes.unshift('Wallace');
+
+// Adiciona no final do array
+// nomes.push('Cátia');
 // console.log(nomes);
 
 // Fatia o array espeficiando o inicio e fim como paremetro
@@ -31,5 +34,7 @@ const nomes = ['Eduardo', 'Maria', 'Joana'];
 // console.log(nome1);
 
 const nomeArray = ['Tawan', 'Silva', 'Souza'];
-const nome = nomeArray.join(' ');
+// const nome = nomeArray.join(' ');
 console.log(nome);
+
+
