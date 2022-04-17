@@ -35,6 +35,7 @@ const nomes = ['Eduardo', 'Maria', 'Joana'];
 
 const nomeArray = ['Tawan', 'Silva', 'Souza'];
 // const nome = nomeArray.join(' ');
-console.log(nome);
+// console.log(nome);
+
 
 

@@ -19,3 +19,21 @@ console.log(nomes);
 // simulando push() com (splice()) -> que que ADICIONA elems no final array.
 // nomes.splice(nomes.length, 0, 'Luiz', 'Carlos', 'Tawan');
 // console.log(nomes);
+
+
+const primeiroLugar = setTimeout(() => {
+    return 'Ana em primeiro'
+}, 1000);
+
+const segundoLugar = setTimeout(() => {
+    return 'Pedro em segundo'
+}, 2000);
+
+const terceiroLugar = setTimeout(() => {
+    return 'Roberta em terceiro'
+}, 3000);
+
+
+function podio() {
+    
+}

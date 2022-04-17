@@ -3,4 +3,14 @@
 // -> Dobrar os valores
 // -> Reduzir (somar tudo)
 
-const numeros = [5,58,74,62,21,4,23,1,2,3,4,5,6,7,8,9];
+const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
+const numerosPares = numeros
+    .filter(valor => valor % 2 === 0)
+    .map(valor => valor * 2)
+    .reduce((acc, valor) => acc += valor)
+
+console.log(numerosPares);
+
+// [ 50, 80, 2, 8, 22 ] Pares
+// [ 100, 160, 4, 16, 44 ] Dobro
+// 324 somando tudo

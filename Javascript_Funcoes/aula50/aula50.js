@@ -13,13 +13,10 @@ todos os argumentos enviadors */
 // funcaoUm({nome: 'Tawan', sobrenome: 'Silva', idade: 20});
 // funcaoDois(['Tawan Silva', 'Souza', 20]);
 
-const conta = (operador, acumulador, ...numeros) => {
-    // for(let numero of numeros) {
-    //    if (operador === '+') acumulador += numero;
-    //    if (operador === '-') acumulador -= numero;
-    //    if (operador === '/') acumulador /= numero;
-    //    if (operador === '*') acumulador *= numero;
-    // }
+// ...rest - spread operator
+const conta = (...args) => {
+    console.log(args);
+   
 
     // console.log(acumulador);
     console.log(arguments);
