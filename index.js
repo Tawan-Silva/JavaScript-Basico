@@ -35,12 +35,26 @@
 
 // showUserName(3)
 
-const numeros = [1, 2, 3, 4, 5, 6];
-const numerosPares = []
-function encontraPares() {
-    for (let i = 0; i < numeros.length; i++) {
-        if (numeros[i] % 2 === 0) numerosPares.push(numeros[i])
-    }
-    return numerosPares
+// const numeros = [1, 2, 3, 4, 5, 6];
+// const numerosPares = []
+// function encontraPares() {
+//     for (let i = 0; i < numeros.length; i++) {
+//         if (numeros[i] % 2 === 0) numerosPares.push(numeros[i])
+//     }
+//     return numerosPares
+// }
+// console.log(encontraPares());
+
+
+
+
+const numeros = [1, 2, 3, 4, 5];
+
+
+while (numeros.length > 0) {
+    numeros.pop()
 }
-console.log(encontraPares());
+numeros.push("Não tem nada aqui")
+
+
+console.log();

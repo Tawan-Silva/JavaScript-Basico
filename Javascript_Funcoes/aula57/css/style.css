@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: cornflowerblue;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+
+.calculadora {
+    width: 400px;
+}
+
+.display {
+    font-size: 2em;
+    width: 100%;
+    text-align: right;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    border: none;
+    background-color: #e8e7e7;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d9d9d9;
+}
